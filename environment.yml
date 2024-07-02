@@ -1,0 +1,8 @@
+name: dst-streamlitdashboard
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - streamlit=1.36.0
+  - scikit-learn=1.4.2
+  - joblib=1.4.0
