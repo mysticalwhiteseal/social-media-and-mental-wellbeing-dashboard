@@ -19,11 +19,14 @@ _left, mid, _right = st.columns([0.38, 0.8, 0.2])
 mid.image("./images/boo.jpg", width=600)
 st.markdown("<p></p>", unsafe_allow_html=True)
 
-st.markdown("<h2 style='text-align: center;'>Topics to Explore:</h2>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-size: 20px;'>• What Are the Top User Emotions for Each Platform?</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-size: 20px;'>• What Is the Online Activity of Angry Twitter Users Like?</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-size: 20px;'>• Why Is LinkedIn Considered \"Boring\"?</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-size: 20px;'>• Generation Z vs Millennials: How Do They Use Social Media?</p>", unsafe_allow_html=True)
+topic_col1, topic_col2, topic_col3 = st.columns([0.2, 0.8, 0.2])
+
+with topic_col2:
+    st.markdown("<h2 style='text-align: center;'>Topics to Explore:</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 20px;'>• What Are the Top User Emotions for Each Platform?</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 20px;'>• What Is the Online Activity of Angry Twitter Users Like?</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 20px;'>• Why Is LinkedIn Considered \"Boring\"?</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 20px;'>• Generation Z vs Millennials: How Do They Use Social Media?</p>", unsafe_allow_html=True)
 
 st.markdown("<h1></h1>", unsafe_allow_html=True)
 
@@ -163,7 +166,8 @@ else:
         plt.tight_layout(rect=[0, 0, 1, 0.96])
         st.pyplot(fig2)
 
-st.markdown("#")
+st.markdown("#####")
+st.markdown("#####")
 q2_1_col1, q2_1_col2 = st.columns([1.5, 1])
 
 with q2_1_col2:
@@ -206,7 +210,8 @@ with q2_1_col1:
     plt.tight_layout(rect=[0, 0, 1, 0.96])
     st.pyplot(fig3)
 
-st.markdown("#")
+st.markdown("###")
+st.markdown("#####")
 img1_col1, img1_col2 = st.columns(2)
 with img1_col1:
     st.subheader("Even with the death of the bird we all know and love, the users there do not mess around...")
@@ -217,7 +222,8 @@ with img1_col2:
 
 # --------- What Is the Online Activity of Angry Twitter Users Like ---------
 # Distribution of Daily Usage Time Across Different Social Media Platforms
-st.markdown("#")
+st.markdown("###")
+st.markdown("###")
 st.title("Why is LinkedIn Considered \'Boring\'?")
 st.subheader("Too formal? Too corporate? What could it be?")
 st.markdown("---")
@@ -272,7 +278,7 @@ with img3_col2:
     st.markdown("<h4 style='text-align: center; line-height: 40px;'>The constant corporate tone can feel like a droning lecture... repetitive and dry, which can make people looking for more dynamic content feel bored.</h4>", unsafe_allow_html=True)
 
 # --------- Generation Z vs Millennials: How Do They Use Social Media ---------
-# Gen Z: Platform Frequency and Mean Daily Usage Time
+# Gen Z and Millennials: Platform Frequency and Mean Daily Usage Time
 st.markdown("#")
 st.title("Generation Z vs Millennials: How Do They Use Social Media?")
 st.subheader("Generational Differences in Social Media Behavior")

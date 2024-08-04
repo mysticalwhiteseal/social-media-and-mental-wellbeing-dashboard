@@ -29,13 +29,19 @@ st.markdown("<h2 style='text-align: center;'>Social Media and Mental Well-Being<
 st.markdown("<p style='text-align: center; font-size: 20px;'>An interactive dashboard visualizing findings of the study, serving you insightful information on user demographics, online social activity, and emotional states.</p>", unsafe_allow_html=True)
 st.markdown("---")
 
+
 st.markdown("<p></p>", unsafe_allow_html=True)
-_left, mid, _right = st.columns([0.38, 0.8, 0.2])
-mid.image("./images/boo.jpg", width=600)
+# _left, mid, _right = st.columns([0.38, 0.8, 0.2])
+vid_col1, vid_col2 = st.columns([1.5, 1])
+# mid.image("./images/boo.jpg", width=600)
+vid_col1.video("https://www.youtube.com/watch?v=GQmHWIydk-U")
 st.markdown("<p></p>", unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([0.1, 0.3, 0.1])
-col2.markdown("<h4 style='text-align: justify; line-height: 40px;'>Social media can be a wonderful tool, connecting individuals far apart together and keeping us in touch. But have you ever stopped and wondered: Is it really all rainbows and sunshine? Since the COVID-19 wave hit, for the first time, we experienced extended periods of isolation... relying heavily on social media to fill the void of physical interactions.</h4>", unsafe_allow_html=True)
+with vid_col2:
+    col1, col2, col3 = st.columns([0.05, 0.3, 0.05])
+    col2.markdown("###")
+    col2.markdown("<h4 style='text-align: justify; line-height: 40px;'>Social media can be a wonderful tool, connecting individuals far apart together and keeping us in touch. But have you ever stopped and wondered: Is it really all rainbows and sunshine?</h4>", unsafe_allow_html=True)
+    col2.markdown("<h4 style='text-align: justify; line-height: 40px;'>Since the COVID-19 wave hit, for the first time, we experienced extended periods of isolation... relying heavily on social media to fill the void of physical interactions.</h4>", unsafe_allow_html=True)
 
 st.markdown("###")
 st.title("How can it possibly be bad?")
@@ -53,7 +59,7 @@ with img2_col2:
     st.markdown("")
     st.markdown("<h3 style='text-align: center; line-height: 20px;'>The constant fidgeting</h3>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center; line-height: 20px;'> waiting for something to happen.</h3>", unsafe_allow_html=True)
-st.markdown("#####")
+st.markdown("###")
 st.markdown("<p style='text-align: center; font-size: 60px; line-height: 90px;'>All for that Sweet, Sweet Dopamine Boost when Someone Double-Taps Your Post.</p>", unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; line-height: 20px;'>And guess what? They keep YOU coming back for more!</h4>", unsafe_allow_html=True)
@@ -76,6 +82,7 @@ img3_col4.image("./images/Telegram.svg", use_column_width=True)
 
 st.markdown("#####")
 st.title("Okay, but HOW BAD is it?")
+st.markdown("---")
 st.markdown("<h4 style='text-align: justify; line-height: 40px;'>The effects of prolonged social media use can be quite significant, impacting various aspects of our lives.</h4>", unsafe_allow_html=True)
 
 st.markdown("#")
@@ -85,7 +92,7 @@ with img4_col1:
     st.markdown("######")
     st.markdown("<h3 style='text-align: right; line-height: 40px;'>Constantly staring at highlights of other people's lives can make you feel inadequate. \'Compare and despair\', as they say, causes frequent mood swings, as you lament why nice things never ever happen to you.</h3>", unsafe_allow_html=True)
 
-img4_col2.image("./images/mood_swing.jpg", width=400)
+img4_col2.image("./images/mood_swing.jpg", width=400, caption="Vecteezy.com")
 
 st.markdown("#")
 st.markdown("<h2 style='text-align: center; line-height: 40px;'>You may lose sleep if you only fall asleep to screens, your sleep quality and cycles utterly in shambles.</h2>", unsafe_allow_html=True)
@@ -95,11 +102,11 @@ st.markdown("#")
 st.markdown("##")
 img5_col1, img5_col2 = st.columns([1, 1.3])
 
-img5_col1.image("./images/distracted.jfif", caption="Vecteezy.com")
+img5_col1.image("./images/distracted.jfif")
 
 with img5_col2:
     st.markdown("####")
-    st.markdown("<h3 style='text-align: right; line-height: 40px;'>If you are addicated enough, you can be easily distracted from what you were supposed to be doing. Productivity goes out the window when your attention is fragmented, stolen by those</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: right; line-height: 40px;'>If you are addicted enough, you can be easily distracted from what you were supposed to be doing. Productivity goes out the window when your attention is fragmented, stolen by those</h3>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; font-size: 100px; line-height: 100px; color: yellow;'><b>DING,</b></h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; font-size: 100px; line-height: 90px; color: yellow;'><b>DING,</b></h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; font-size: 100px; line-height: 90px;'><span style='color: yellow;'><b>DING!</b></span>s</h1>", unsafe_allow_html=True)
@@ -117,12 +124,12 @@ with img6_col1:
 
 img6_col2.image("./images/self_esteem.jpg", caption="Vecteezy.com", width=650)
 
-st.markdown("###")
-st.title("Are we screwed?")
+st.markdown("##")
+st.title("Are we screwed then?")
 st.markdown("---")
 st.markdown("<h3 style='text-align: left; line-height: 40px;'>Of course, if you are not glued to devices all day, you're probably fine.</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: left; line-height: 40px;'>Moderation is key, the excessive use of anything is going to backfire. When you have a healthy balance of entertainment and the rest of your life, these effects would not apply to you.</h3>", unsafe_allow_html=True)
-st.markdown("###")
+st.markdown("#")
 
 img7_col1, img7_col2 = st.columns([1, 1.3])
 
@@ -133,6 +140,7 @@ with img7_col2:
     st.subheader("with")
 
     eric = crop_image(Image.open("./images/Eric.JPG"))
+    vincent = crop_image(Image.open("./images/Vincent.jpg"))
     
     img8_col1, img8_col2, img8_col3 = st.columns([0.5, 0.2, 0.5])
     
@@ -144,5 +152,5 @@ with img7_col2:
         st.markdown("#####")
         st.markdown("<p style='text-align: center; font-size: 65px;'><b>&</b></p>", unsafe_allow_html=True)
     with img8_col3:
-        st.image(eric, use_column_width=True)
-        st.markdown("<p style='text-align: center; font-size: 20px;'>Eric Foo Zhi Xian</p>", unsafe_allow_html=True)
+        st.image(vincent, use_column_width=True)
+        st.markdown("<p style='text-align: center; font-size: 20px;'>Vincent Phang Wing Soon</p>", unsafe_allow_html=True)
