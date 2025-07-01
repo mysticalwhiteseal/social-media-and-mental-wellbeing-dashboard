@@ -1,6 +1,6 @@
-streamlit=1.36.0
+streamlit==1.36.0
 scikit-learn
-joblib
+joblib==1.4.0
 matplotlib
 seaborn
 pillow
