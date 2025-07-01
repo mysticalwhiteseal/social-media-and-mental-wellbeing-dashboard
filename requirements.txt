@@ -1,6 +1,6 @@
 streamlit==1.36.0
-scikit-learn
+scikit-learn==1.4.2
 joblib==1.4.0
-matplotlib
-seaborn
-pillow
+matplotlib==3.8.4
+seaborn==0.12.2
+pillow==10.4.0
